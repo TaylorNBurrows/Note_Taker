@@ -57,6 +57,7 @@ var handleNoteSave = function() {
   };
 
   saveNote(newNote).then(function(data) {
+    // window.location.reload();
     getAndRenderNotes();
     renderActiveNote();
   });
